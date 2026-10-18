@@ -22,8 +22,9 @@
     <li>One Line does not require an account, sign-up or login.</li>
     <li>We (the developer) do not collect, store or receive your personal information on any server of our own.</li>
     <li>Your game progress and settings are stored only on your device.</li>
-    <li>The app shows ads served by Google AdMob. Google may collect and process certain data, such as your device's advertising ID, as described below.</li>
-    <li>Where the law requires it (for example in the UK, EEA and Switzerland), the app asks for your consent before personalised ads are shown, and you can change your choice at any time.</li>
+    <li>One Line is designed for players of all ages, including children under 13. We treat <strong>every</strong> player as a child.</li>
+    <li>The app shows ads served by Google AdMob. All ads are non-personalised and rated G (suitable for all ages). The app does not collect the advertising ID, and no interest-based or remarketing ads are shown.</li>
+    <li>Because no personalised advertising takes place, the app does not show an ad consent form.</li>
   </ul>
   <h2>1. Information stored on your device</h2>
   <p>The app saves the following data locally on your device, using Android's app storage:</p>
@@ -35,31 +36,40 @@
   <p><strong>Android backup:</strong> If you have Android backup enabled on your device, Android may include this game data in your Google account's device backup or in a device-to-device transfer, so your progress can be restored on a new phone. This is handled by Android/Google under your Google account settings, not by us.</p>
   <h2>2. Advertising (Google AdMob)</h2>
   <p>The app is free and supported by ads. It uses the <strong>Google Mobile Ads SDK (AdMob)</strong> to show banner ads, interstitial ads at natural breaks (for example between puzzles), and optional rewarded video ads (for example to get a booster or extra time in Beat the Clock).</p>
-  <p>To serve and measure ads, and to prevent fraud, Google may automatically collect and process information from your device, such as:</p>
+  <p>Google AdMob is certified for use in apps for children under Google Play's Families policy. Every ad request from the app is marked as <strong>child-directed</strong> (for COPPA) and <strong>under the age of consent</strong> (for the GDPR and UK GDPR), with a maximum ad content rating of <strong>G</strong>. This means, for every player:</p>
   <ul>
-    <li>Device identifiers, including the Android advertising ID (AAID / app set ID)</li>
-    <li>IP address, which may be used to estimate your approximate (general) location</li>
-    <li>Device and app information (device model, operating system version, app version, language)</li>
-    <li>Ad interaction data (for example ads viewed or tapped)</li>
-    <li>Diagnostic information (for example ad loading errors and performance)</li>
+    <li>Ads are <strong>not personalised</strong>, and no interest-based advertising or remarketing is used.</li>
+    <li>The <strong>Android advertising ID is not collected</strong> (the app removes the advertising ID permission).</li>
+    <li>Only ads suitable for general audiences (rated G) are requested.</li>
   </ul>
-  <p>This information is collected and processed by Google, not by us. Data sent to Google is encrypted in transit. For details see:</p>
+  <p>To show these contextual ads, limit how often ads appear, measure them and prevent fraud, the Google Mobile Ads SDK may still process limited information such as:</p>
+  <ul>
+    <li><strong>IP address</strong>, used to estimate an approximate (city or country level) location, never precise location</li>
+    <li><strong>Device and app information</strong>, such as device model, operating system version, app version and language</li>
+    <li><strong>Ad interactions</strong>, such as ad views and taps</li>
+    <li><strong>Diagnostic and performance information</strong>, such as SDK crash logs and ad loading performance</li>
+  </ul>
+  <p>This data is processed by Google under its own policies and under child-directed treatment, not by us. We do not receive information that identifies you personally, and we do not sell any data. Data sent by the ads SDK is encrypted in transit (HTTPS). For details see:</p>
   <ul>
     <li>How Google uses information from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
     <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
     <li>AdMob and user privacy: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
   </ul>
   <h2>3. Consent (Google User Messaging Platform)</h2>
-  <p>The app uses Google's <strong>User Messaging Platform (UMP)</strong> to ask for your consent where required by law, for example under the GDPR in the UK, European Economic Area and Switzerland, and under applicable US state privacy laws. Depending on your choice, Google may show you personalised or non-personalised (limited) ads.</p>
-  <p>You can review or change your choice at any time in the app under <strong>Settings &gt; Ad privacy choices</strong> (shown when this option applies in your region).</p>
-  <p>You can also limit ad personalisation for all apps on your device: open your device's <strong>Settings &gt; Google &gt; Ads</strong> (wording may vary by device) and reset or delete your advertising ID.</p>
+  <p>Because every player is treated as a child, the app does not ask for consent to personalised ads and never shows them.</p>
+  <ul>
+    <li><strong>No consent form:</strong> the app uses Google's User Messaging Platform (UMP) only to tell Google that the user is under the age of consent. As a result, no consent form is shown and personalised ads are never requested, wherever you live.</li>
+    <li><strong>Ad privacy choices:</strong> the <strong>Settings &gt; Ad privacy choices</strong> entry only appears if Google's consent tool reports that it is required, which is not expected for this setup.</li>
+    <li><strong>Advertising ID:</strong> the app does not read your advertising ID, so resetting it in your device settings has no effect on this app.</li>
+    <li>Rewarded video ads are always optional and clearly labelled.</li>
+  </ul>
   <h2>4. Permissions</h2>
   <p>The app requests only these Android permissions:</p>
   <ul>
-    <li><strong>Internet</strong> (<code>INTERNET</code>): to load ads and the consent form.</li>
+    <li><strong>Internet</strong> (<code>INTERNET</code>): to load ads and check the consent status with Google.</li>
     <li><strong>Network state</strong> (<code>ACCESS_NETWORK_STATE</code>): used by the ads SDK to check whether a connection is available before requesting ads.</li>
   </ul>
-  <p>The app does not request access to your location (GPS), camera, microphone, contacts, photos, files or phone calls.</p>
+  <p>The app removes the <strong>Advertising ID</strong> permission (<code>com.google.android.gms.permission.AD_ID</code>) that the Google Mobile Ads SDK would otherwise add, so the advertising ID cannot be read. The app does not request access to your location (GPS), camera, microphone, contacts, photos, files or phone calls.</p>
   <h2>5. Analytics and crash reporting</h2>
   <p>The app does not include any separate analytics or crash reporting service. Diagnostic data related to ads may be collected by the Google Mobile Ads SDK as described in section 2.</p>
   <h2>6. Data sharing and selling</h2>
@@ -67,11 +77,19 @@
   <h2>7. Data retention and deletion</h2>
   <ul>
     <li><strong>On-device data:</strong> You can delete all game progress and settings at any time by clearing the app's storage (<strong>Android Settings &gt; Apps &gt; One Line &gt; Storage &gt; Clear storage</strong>) or by uninstalling the app.</li>
-    <li><strong>Advertising data:</strong> Data collected by Google is retained under Google's own policies. You can reset or delete your advertising ID in your device settings, and manage your Google ad settings at <a href="https://adssettings.google.com">https://adssettings.google.com</a>.</li>
+    <li><strong>Advertising data:</strong> Data processed by Google for child-directed ads is retained under Google's own policies (see <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). Contact us and we will help with any request.</li>
   </ul>
   <p>Because we do not hold any of your data on our own servers, there is no account or server-side data for us to delete.</p>
   <h2>8. Children's privacy</h2>
-  <p>One Line is not directed at children under the age of 13, and we do not knowingly collect personal information from children. The app does not ask users for any personal information. If you believe a child has provided personal information through the app, please contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a>.</p>
+  <p>One Line is designed for players of all ages, including children under 13 (or the equivalent minimum age in your country). We follow Google Play's Families policy and treat every player as a child, whatever their age:</p>
+  <ul>
+    <li>We do not ask for or collect any personal information. There is no account, chat, user-generated content or in-app purchase.</li>
+    <li>Every ad request is tagged as child-directed under the US Children's Online Privacy Protection Act (COPPA) and as under the age of consent under the GDPR and UK GDPR (including the rules for children, sometimes called "GDPR-K"). Google therefore shows only non-personalised, G-rated ads.</li>
+    <li>The app does not collect the Android advertising ID, and no interest-based advertising or remarketing is used.</li>
+    <li>No ad consent form is shown, because no personalised advertising or consent-based processing takes place.</li>
+    <li>Rewarded videos are optional and clearly labelled; full-screen ads appear only at natural breaks between games.</li>
+  </ul>
+  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data processed by Google.</p>
   <h2>9. Security</h2>
   <p>Game data is kept in the app's private storage on your device, which other apps cannot access. Communication between the app and Google's ad services uses encrypted connections (HTTPS).</p>
   <h2>10. Changes to this policy</h2>

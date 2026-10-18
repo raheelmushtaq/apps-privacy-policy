@@ -22,8 +22,9 @@
     <li>You do not need an account. The app has no sign-up or login.</li>
     <li>We (the developer) do not run any server and do not receive, store or sell your personal information.</li>
     <li>Your game progress and settings are stored only on your device.</li>
-    <li>The app shows ads from <strong>Google AdMob</strong>. Google may collect certain device data to show ads, as described below.</li>
-    <li>Users in the UK, EEA, Switzerland and certain US states are asked for consent through Google's consent form, and can change their choice at any time in <strong>Settings &gt; Ad privacy choices</strong>.</li>
+    <li>Block Puzzle is designed for players of all ages, including children under 13. We treat <strong>every</strong> player as a child.</li>
+    <li>The app shows ads from <strong>Google AdMob</strong>. All ads are non-personalised and rated G (suitable for all ages). The app does not collect the advertising ID, and no interest-based or remarketing ads are shown.</li>
+    <li>Because no personalised advertising takes place, the app does not show an ad consent form.</li>
   </ul>
   <h2>1. Information stored on your device</h2>
   <p>The app saves the following information locally on your device, using Android's app storage (DataStore):</p>
@@ -38,45 +39,56 @@
   <p>This information never leaves your device through us. It is not linked to your identity.</p>
   <p><strong>Android backup:</strong> if you have Android backup turned on, Android may include this game data in your device backup (for example to your Google account) so your progress can be restored after reinstalling or moving to a new device. This backup is handled by Google/Android under your device settings, not by us.</p>
   <h2>2. Advertising (Google AdMob)</h2>
-  <p>The app is supported by ads: banner ads, occasional full-screen (interstitial) ads between games, and optional rewarded videos you can choose to watch for a continue or extra boosters.</p>
-  <p>Ads are provided by Google AdMob (Google LLC). To deliver, measure and personalize ads (where you allow it), and to prevent fraud, the Google Mobile Ads SDK may automatically collect and process information such as:</p>
+  <p>The app is supported by ads: banner ads, occasional full-screen (interstitial) ads at natural breaks between games, and optional rewarded videos you can choose to watch for a continue or extra boosters. Rewarded videos are always optional and clearly labelled.</p>
+  <p>Ads are provided by Google AdMob (Google LLC), which is certified for use in apps for children under Google Play's Families policy. Every ad request from the app is marked as <strong>child-directed</strong> (for COPPA) and <strong>under the age of consent</strong> (for the GDPR and UK GDPR), with a maximum ad content rating of <strong>G</strong>. This means, for every player:</p>
   <ul>
-    <li>Device identifiers, including the Android advertising ID</li>
-    <li>Approximate location derived from your IP address</li>
+    <li>Ads are <strong>not personalised</strong>, and no interest-based advertising or remarketing is used.</li>
+    <li>The <strong>Android advertising ID is not collected</strong> (the app removes the advertising ID permission).</li>
+    <li>Only ads suitable for general audiences (rated G) are requested.</li>
+  </ul>
+  <p>To show these contextual ads, limit how often ads appear, measure them and prevent fraud, the Google Mobile Ads SDK may still process limited information such as:</p>
+  <ul>
+    <li>IP address, used to estimate an approximate (city or country level) location, never precise location</li>
     <li>Device and app information (device model, operating system version, app version, language)</li>
-    <li>Interactions with ads (for example ad views and taps) and app usage information</li>
+    <li>Interactions with ads (for example ad views and taps)</li>
     <li>Diagnostic and performance information (for example SDK crash logs and ad load times)</li>
   </ul>
-  <p>This data is collected and processed by Google under its own policies. We do not receive information that identifies you personally. Learn more:</p>
+  <p>This data is processed by Google under its own policies and under child-directed treatment. We do not receive information that identifies you personally, and we do not sell any data. Learn more:</p>
   <ul>
     <li>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
     <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-    <li>Ad settings: <a href="https://adssettings.google.com">https://adssettings.google.com</a></li>
   </ul>
   <p>Data sent by the Google Mobile Ads SDK is encrypted in transit.</p>
   <h3>Consent and your choices</h3>
   <ul>
-    <li><strong>Consent (GDPR / UK GDPR / US state laws):</strong> the app uses Google's User Messaging Platform (UMP). When required in your region, a consent form is shown when the app starts, before ads are requested. You can choose whether to allow personalized ads.</li>
-    <li><strong>Change your choice:</strong> where required, open <strong>Settings &gt; Ad privacy choices</strong> in the app to review or change your consent at any time.</li>
-    <li><strong>Advertising ID:</strong> you can reset or delete your advertising ID, or opt out of personalized ads, in your device settings (Settings &gt; Google &gt; Ads, or Settings &gt; Privacy &gt; Ads, depending on your device).</li>
+    <li><strong>No consent form:</strong> the app uses Google's User Messaging Platform (UMP) only to tell Google that the user is under the age of consent. As a result, no consent form is shown and personalised ads are never requested, wherever you live.</li>
+    <li><strong>Ad privacy choices:</strong> the <strong>Settings &gt; Ad privacy choices</strong> entry only appears if Google's consent tool reports that it is required, which is not expected for this setup.</li>
+    <li><strong>Advertising ID:</strong> the app does not read your advertising ID, so resetting it in your device settings has no effect on this app.</li>
   </ul>
   <h2>3. Permissions</h2>
   <p>The app requests only:</p>
   <ul>
     <li><strong>Internet</strong> (<code>android.permission.INTERNET</code>): to load ads.</li>
     <li><strong>Network state</strong> (<code>android.permission.ACCESS_NETWORK_STATE</code>): used by the ads SDK to check connectivity before loading ads.</li>
-    <li><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>): added by the Google Mobile Ads SDK to read the advertising ID for ads.</li>
   </ul>
-  <p>The app does not request access to your location (GPS), contacts, camera, microphone, photos or files.</p>
+  <p>The app removes the <strong>Advertising ID</strong> permission (<code>com.google.android.gms.permission.AD_ID</code>) that the Google Mobile Ads SDK would otherwise add, so it cannot read the advertising ID. The app does not request access to your location (GPS), contacts, camera, microphone, photos or files.</p>
   <h2>4. Information we do not collect</h2>
   <p>We do not collect your name, email address, phone number, contacts, precise location, photos, files or payment information. The app has no in-app purchases, chat, or user-generated content.</p>
   <h2>5. Data retention and deletion</h2>
   <ul>
     <li>Game data stays on your device until you delete it. You can delete it at any time by clearing the app's storage (Android Settings &gt; Apps &gt; Block Puzzle &gt; Storage &gt; Clear storage) or by uninstalling the app.</li>
-    <li>Because we do not hold any of your data on our own servers, there is nothing for us to delete on our side. For data processed by Google for advertising, you can reset your advertising ID in device settings or use Google's tools at <a href="https://myaccount.google.com">https://myaccount.google.com</a>.</li>
+    <li>Because we do not hold any of your data on our own servers, there is nothing for us to delete on our side. Data processed by Google for child-directed ads is handled under Google's privacy policy; see <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> or contact us and we will help.</li>
   </ul>
   <h2>6. Children's privacy</h2>
-  <p>The app is not directed at children under 13 (or the equivalent minimum age in your country). We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> and we will help address it.</p>
+  <p>Block Puzzle is designed for players of all ages, including children under 13 (or the equivalent minimum age in your country). We follow Google Play's Families policy and treat every player as a child, whatever their age:</p>
+  <ul>
+    <li>We do not ask for or collect any personal information. There is no account, chat, user-generated content or in-app purchase.</li>
+    <li>Every ad request is tagged as child-directed under the US Children's Online Privacy Protection Act (COPPA) and as under the age of consent under the GDPR and UK GDPR (including the rules for children, sometimes called "GDPR-K"). Google therefore shows only non-personalised, G-rated ads.</li>
+    <li>The app does not collect the Android advertising ID, and no interest-based advertising or remarketing is used.</li>
+    <li>No ad consent form is shown, because no personalised advertising or consent-based processing takes place.</li>
+    <li>Rewarded videos are optional and clearly labelled; full-screen ads appear only at natural breaks between games.</li>
+  </ul>
+  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data processed by Google.</p>
   <h2>7. Security</h2>
   <p>Game data is stored in the app's private storage, which other apps cannot access. Network communication by the ads SDK uses encrypted connections (HTTPS).</p>
   <h2>8. Changes to this policy</h2>
