@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy for Arrow Flow</h1>
-  <p><strong>Last updated:</strong> November 6, 2026</p>
+  <p><strong>Last updated:</strong> November 25, 2026</p>
   <p>This Privacy Policy explains how the Android app <strong>Arrow Flow – Logic Puzzle</strong> (package <code>com.hertz.arrowpuzzle</code>, "the app"), published by Hertz Studio ("we", "us"), handles information. If you have questions, contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a>.</p>
   <h2>Summary</h2>
   <ul>
@@ -25,6 +25,7 @@
     <li>The app shows ads from <strong>Google AdMob</strong>. All ads are non-personalized and rated G (suitable for all ages). The app does not collect the advertising ID, and no interest-based or remarketing ads are shown.</li>
     <li>Because no personalized advertising takes place, the app does not show an ad consent form.</li>
     <li>The optional daily reminder is a notification created on your device. Nothing is sent to us.</li>
+    <li>If the game crashes, it sends a short technical crash report (with no personal information) to <strong>Firebase Crashlytics</strong> so we can fix the problem.</li>
   </ul>
   <h2>1. Information stored on your device</h2>
   <p>The app saves the following on your device, using Android's local app storage:</p>
@@ -34,7 +35,7 @@
     <li>Hints you own</li>
     <li>Settings: play mode (Relaxed, Normal or Hard), sound, vibration, grid, arrow colour theme, daily reminder on/off, and whether you have seen the tutorial</li>
   </ul>
-  <p>This data never leaves your device through the app and is not sent to us. If you have Android backup turned on, Android may include this data in your device's backup to your Google account, or copy it to a new device during setup. That backup is handled by Google under your Google account settings, not by us. You can delete all of this data at any time by clearing the app's storage (Settings &gt; Apps &gt; Arrow Flow &gt; Storage &gt; Clear storage) or by uninstalling the app.</p>
+  <p>This data is not sent to us. The only exception is a crash report (section 3), which may include basic game state such as the level being played. If you have Android backup turned on, Android may include this data in your device's backup to your Google account, or copy it to a new device during setup. That backup is handled by Google under your Google account settings, not by us. You can delete all of this data at any time by clearing the app's storage (Settings &gt; Apps &gt; Arrow Flow &gt; Storage &gt; Clear storage) or by uninstalling the app.</p>
   <h2>2. Advertising (Google AdMob)</h2>
   <p>The app is free to play and is supported by ads provided by Google AdMob (Google Mobile Ads SDK). The app shows banner ads, occasional full-screen ads between levels, and optional rewarded video ads that you can choose to watch for in-game rewards such as hints, undoing a mistake, a second chance, extra time in Survival or a streak freeze.</p>
   <p>Google AdMob is certified for use in apps for children under Google Play's Families policy. Every ad request from the app is marked as <strong>child-directed</strong> (for COPPA) and <strong>under the age of consent</strong> (for the GDPR and UK GDPR), with a maximum ad content rating of <strong>G</strong>. This means, for every player:</p>
@@ -57,26 +58,34 @@
     <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
     <li>Google advertising technologies: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
   </ul>
-  <h2>3. Consent and your choices</h2>
+  <h2>3. Crash reports (Firebase Crashlytics)</h2>
+  <p>To find and fix bugs, Arrow Flow uses <strong>Firebase Crashlytics</strong>, a service provided by Google. If the game crashes or hits a serious error, it sends a crash report. A crash report contains only technical information:</p>
+  <ul>
+    <li>what went wrong in the game's code (the stack trace), the game version and basic game state, such as the level being played;</li>
+    <li>the device model, Android version and similar technical details (memory, screen orientation);</li>
+    <li>a random identifier created for crash reporting, used only to count how many devices are affected. It is not the advertising ID and is not linked to you.</li>
+  </ul>
+  <p>Crash reports never include your name, email, contacts, location, photos or anything you type, and nothing in them identifies a child. They are used only to fix problems, not for advertising, and are not sold or shared. Google processes them on our behalf and keeps them for 90 days, then deletes them. You can read more at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. To ask for crash data to be deleted sooner, email us at the address below.</p>
+  <h2>4. Consent and your choices</h2>
   <ul>
     <li><strong>No consent form:</strong> the app uses Google's User Messaging Platform (UMP) only to tell Google that the user is under the age of consent. As a result, no consent form is shown and personalized ads are never requested, wherever you live.</li>
     <li><strong>Ad privacy choices:</strong> the <strong>Settings &gt; Ad privacy choices</strong> entry only appears if Google's consent tool reports that it is required, which is not expected for this setup.</li>
     <li><strong>Advertising ID:</strong> the app does not read your advertising ID, so resetting it in your device settings has no effect on this app.</li>
     <li>Rewarded video ads are always optional and clearly labelled.</li>
   </ul>
-  <h2>4. Notifications</h2>
+  <h2>5. Notifications</h2>
   <p>If you turn on the daily reminder (in Settings, or when the app offers it after your first daily challenge), the app schedules a notification on your device for the evening, shown only if you have not played that day's challenge. On Android 13 and later, Android asks for your permission first. The reminder is created entirely on your device, and nothing is sent to us. You can turn it off at any time in the app's Settings or in Android's notification settings.</p>
-  <h2>5. Internet and permissions</h2>
+  <h2>6. Internet and permissions</h2>
   <ul>
-    <li><strong>Internet and network state:</strong> used only to load and show ads and to check the consent status with Google (no consent message is shown).</li>
+    <li><strong>Internet and network state:</strong> used to load and show ads, to check the consent status with Google (no consent message is shown) and to send crash reports (section 3).</li>
     <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): used only for the optional daily reminder.</li>
   </ul>
   <p>The app removes the advertising ID permission that the Google Mobile Ads SDK would otherwise add. It does not use precise location, and it does not ask for the location, camera, microphone, contacts or storage permissions. The puzzles are created on your device, so the game can be played without an internet connection.</p>
-  <h2>6. Data we collect</h2>
-  <p>We, the developer, do not collect, store, sell or receive any personal information from the app. We do not use our own analytics or crash-reporting services. Data collected by Google AdMob is handled by Google as described above.</p>
-  <h2>7. Data security</h2>
-  <p>Information collected by the Google Mobile Ads SDK is sent to Google using encrypted connections (HTTPS). Data stored on your device is protected by Android's app sandbox.</p>
-  <h2>8. Children</h2>
+  <h2>7. Data we collect</h2>
+  <p>We, the developer, do not collect, store, sell or receive any personal information from the app. We do not use any analytics service. Crash reports are handled by Firebase Crashlytics, as described in section 3. Data collected by Google AdMob is handled by Google as described above.</p>
+  <h2>8. Data security</h2>
+  <p>Information collected by the Google Mobile Ads SDK, and crash reports sent to Firebase Crashlytics, are sent to Google using encrypted connections (HTTPS). Data stored on your device is protected by Android's app sandbox.</p>
+  <h2>9. Children</h2>
   <p>Arrow Flow is designed for players of all ages, including children under 13 (or the equivalent minimum age in your country). We follow Google Play's Families policy and treat every player as a child, whatever their age:</p>
   <ul>
     <li>We do not ask for or collect any personal information. There is no account, chat, user-generated content or in-app purchase.</li>
@@ -85,13 +94,14 @@
     <li>No ad consent form is shown, because no personalized advertising or consent-based processing takes place.</li>
     <li>Rewarded videos are optional and clearly labelled; full-screen ads appear only at natural breaks between levels.</li>
     <li>The daily reminder is off until it is turned on, and Android asks for permission before any notification is shown.</li>
+    <li>Crash reports contain only technical information and nothing that identifies a child.</li>
   </ul>
-  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data processed by Google.</p>
-  <h2>9. Your rights</h2>
+  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data or crash reports processed by Google.</p>
+  <h2>10. Your rights</h2>
   <p>Depending on where you live, you may have rights to access, correct or delete personal data, or to object to or restrict its use. Because we do not hold any of your data, you can exercise these rights over the data on your device by clearing the app's storage or uninstalling it, and over advertising data (processed by Google under child-directed treatment) by contacting Google or asking us for help. You may also contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a>.</p>
-  <h2>10. Changes to this policy</h2>
+  <h2>11. Changes to this policy</h2>
   <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with a new "Last updated" date.</p>
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p>Hertz Studio Email: <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a></p>
 </body>
 </html>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy for Merge Numbers</h1>
-  <p><strong>Last updated:</strong> November 23, 2026</p>
+  <p><strong>Last updated:</strong> November 25, 2026</p>
   <p>This privacy policy explains how the Android app <strong>Merge Numbers</strong> (package <code>com.hertz.mergenumbers</code>, "the app") handles information. The app is published by <strong>Hertz Studio</strong> ("we", "us").</p>
   <p>If you have any questions, contact us at <strong>raheelmushtaq41@gmail.com</strong>.</p>
   <h2>1. Summary</h2>
@@ -25,6 +25,7 @@
     <li>Merge Numbers is designed for players of all ages, including children under 13. We treat <strong>every</strong> player as a child.</li>
     <li>The app shows ads from <strong>Google AdMob</strong>. All ads are non-personalised and rated G (suitable for all ages). The app doesn't collect the advertising ID, and no interest-based or remarketing ads are shown. Section 3 explains this.</li>
     <li>Because no personalised advertising takes place, the app doesn't show an ad consent form.</li>
+    <li>If the game crashes, it sends a short technical crash report (with no personal information) to <strong>Firebase Crashlytics</strong> so we can fix the problem.</li>
   </ul>
   <h2>2. Information stored on your device</h2>
   <p>The app saves the following on your device using Android's local storage (DataStore):</p>
@@ -36,7 +37,7 @@
     <li>Your power-ups (Shuffle and Hammer) and when you last opened the daily reward chest</li>
     <li>Your in-progress games, so you can continue where you left off</li>
   </ul>
-  <p>We never receive this data. It stays on your device and is deleted when you uninstall the app or clear its data in Android settings.</p>
+  <p>We never receive this data, except that a crash report (section 4) may include basic game state such as the level being played. It stays on your device and is deleted when you uninstall the app or clear its data in Android settings.</p>
   <p><strong>Android backup:</strong> if you have turned on Android's backup, Android may include this game data in your device backup (stored in your Google account) and restore it when you reinstall the app or move to a new phone. Android and Google handle this backup under your Google account settings. We can't access it.</p>
   <h2>3. Advertising (Google AdMob)</h2>
   <p>The app uses the <strong>Google Mobile Ads SDK (AdMob)</strong> to show banner ads, interstitial ads (shown at most occasionally between games) and optional rewarded video ads (shown only when you choose to watch one, for example to get an extra undo or a power-up).</p>
@@ -67,21 +68,29 @@
     <li><strong>Advertising ID:</strong> the app does not read your advertising ID, so resetting it in your device settings has no effect on this app.</li>
     <li>Rewarded video ads are always optional and clearly labelled.</li>
   </ul>
-  <h2>4. Permissions</h2>
+  <h2>4. Crash reports (Firebase Crashlytics)</h2>
+  <p>To find and fix bugs, Merge Numbers uses <strong>Firebase Crashlytics</strong>, a service provided by Google. If the game crashes or hits a serious error, it sends a crash report. A crash report contains only technical information:</p>
+  <ul>
+    <li>what went wrong in the game's code (the stack trace), the game version and basic game state, such as the level being played;</li>
+    <li>the device model, Android version and similar technical details (memory, screen orientation);</li>
+    <li>a random identifier created for crash reporting, used only to count how many devices are affected. It is not the advertising ID and is not linked to you.</li>
+  </ul>
+  <p>Crash reports never include your name, email, contacts, location, photos or anything you type, and nothing in them identifies a child. They are used only to fix problems, not for advertising, and are not sold or shared. Google processes them on our behalf and keeps them for 90 days, then deletes them. You can read more at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. To ask for crash data to be deleted sooner, email us at the address below.</p>
+  <h2>5. Permissions</h2>
   <p>The app requests only these permissions:</p>
   <ul>
-    <li><strong>Internet</strong> (<code>INTERNET</code>): to load ads and check the consent status with Google.</li>
+    <li><strong>Internet</strong> (<code>INTERNET</code>): to load ads, check the consent status with Google and send crash reports (section 4).</li>
     <li><strong>Network state</strong> (<code>ACCESS_NETWORK_STATE</code>): to check whether a connection is available before loading ads.</li>
   </ul>
   <p>The app <strong>removes</strong> the Advertising ID permission (<code>com.google.android.gms.permission.AD_ID</code>) that the Google Mobile Ads SDK would otherwise add, so the advertising ID can't be read.</p>
   <p>The app does <strong>not</strong> access your contacts, camera, microphone, photos, files, precise (GPS) location or phone calls.</p>
-  <h2>5. Data we do not collect</h2>
+  <h2>6. Data we do not collect</h2>
   <ul>
     <li>We don't collect or store any personal information on our own servers.</li>
-    <li>We don't use analytics or crash-reporting services other than what is built into Google's ads SDK.</li>
+    <li>We don't use any analytics service. The only crash-reporting service is Firebase Crashlytics (section 4).</li>
     <li>There are no in-app purchases, chat, user accounts or user-generated content.</li>
   </ul>
-  <h2>6. Children</h2>
+  <h2>7. Children</h2>
   <p>Merge Numbers is designed for players of all ages, including children under 13 (or the equivalent minimum age in your country). We follow Google Play's Families policy and treat every player as a child, whatever their age:</p>
   <ul>
     <li>We do not ask for or collect any personal information. There is no account, chat, user-generated content or in-app purchase.</li>
@@ -89,21 +98,22 @@
     <li>The app does not collect the Android advertising ID, and no interest-based advertising or remarketing is used.</li>
     <li>No ad consent form is shown, because no personalised advertising or consent-based processing takes place.</li>
     <li>Rewarded videos are optional and clearly labelled; full-screen ads appear only at natural breaks between games.</li>
+    <li>Crash reports contain only technical information and nothing that identifies a child.</li>
   </ul>
-  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data processed by Google.</p>
-  <h2>7. Data retention and deletion</h2>
+  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data or crash reports processed by Google.</p>
+  <h2>8. Data retention and deletion</h2>
   <ul>
     <li><strong>Game data on your device:</strong> you can delete it at any time by clearing the app's data in Android settings or by uninstalling the app.</li>
     <li><strong>Advertising data held by Google:</strong> this is governed by Google's privacy policy and processed under child-directed treatment (section 3). For requests, see <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>, or contact us and we'll help.</li>
   </ul>
   <p>Because we don't hold any personal data ourselves, we have nothing to delete on our side. You are still welcome to contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any privacy question.</p>
-  <h2>8. Security</h2>
-  <p>Your game data stays on your device and is protected by Android's app sandbox. Data sent by the ads SDK to Google is encrypted in transit.</p>
-  <h2>9. Your rights</h2>
+  <h2>9. Security</h2>
+  <p>Your game data stays on your device and is protected by Android's app sandbox. Data sent by the ads SDK and crash reports sent to Firebase Crashlytics are encrypted in transit.</p>
+  <h2>10. Your rights</h2>
   <p>Depending on where you live (for example under the GDPR, UK GDPR or US state privacy laws), you may have rights to access, correct, delete or restrict the processing of your personal data, and to object to processing or withdraw consent. Since we don't store personal data ourselves, most of these requests concern Google as the ad provider. Because every player is treated as a child, no consent-based or personalised advertising takes place. Parents and guardians can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> if they need help.</p>
-  <h2>10. Changes to this policy</h2>
+  <h2>11. Changes to this policy</h2>
   <p>We may update this privacy policy from time to time. We'll post any changes on this page and update the "Last updated" date above.</p>
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p><strong>Hertz Studio</strong> Email: <strong>raheelmushtaq41@gmail.com</strong></p>
 </body>
 </html>

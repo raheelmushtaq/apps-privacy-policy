@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy for One Line</h1>
-  <p><strong>Last updated:</strong> November 23, 2026</p>
+  <p><strong>Last updated:</strong> November 25, 2026</p>
   <p>This Privacy Policy explains how the Android app <strong>One Line</strong> (package <code>com.hertz.oneline</code>, "the app"), published by <strong>Hertz Studio</strong> ("we", "us"), handles information. If you have any questions, contact us at <strong>raheelmushtaq41@gmail.com</strong>.</p>
   <h2>Summary</h2>
   <ul>
@@ -25,6 +25,7 @@
     <li>One Line is designed for players of all ages, including children under 13. We treat <strong>every</strong> player as a child.</li>
     <li>The app shows ads served by Google AdMob. All ads are non-personalised and rated G (suitable for all ages). The app does not collect the advertising ID, and no interest-based or remarketing ads are shown.</li>
     <li>Because no personalised advertising takes place, the app does not show an ad consent form.</li>
+    <li>If the game crashes, it sends a short technical crash report (with no personal information) to <strong>Firebase Crashlytics</strong> so we can fix the problem.</li>
   </ul>
   <h2>1. Information stored on your device</h2>
   <p>The app saves the following data locally on your device, using Android's app storage:</p>
@@ -32,7 +33,7 @@
     <li>Game progress: unlocked levels, stars earned per level, completed daily puzzles (used to calculate your daily streak), your Beat the Clock best score, the total number of puzzles solved, booster counts (Hint and Reveal) and the day you last opened the daily chest.</li>
     <li>Settings: sound effects and vibration on/off, and your chosen line colour theme.</li>
   </ul>
-  <p>This data never leaves your device through the app and is not sent to us. It contains no names, email addresses, contacts, photos, location or other personal details.</p>
+  <p>This data is not sent to us. The only exception is a crash report (section 5), which may include basic game state such as the level being played. It contains no names, email addresses, contacts, photos, location or other personal details.</p>
   <p><strong>Android backup:</strong> If you have Android backup enabled on your device, Android may include this game data in your Google account's device backup or in a device-to-device transfer, so your progress can be restored on a new phone. This is handled by Android/Google under your Google account settings, not by us.</p>
   <h2>2. Advertising (Google AdMob)</h2>
   <p>The app is free and supported by ads. It uses the <strong>Google Mobile Ads SDK (AdMob)</strong> to show banner ads, interstitial ads at natural breaks (for example between puzzles), and optional rewarded video ads (for example to get a booster or extra time in Beat the Clock).</p>
@@ -66,14 +67,21 @@
   <h2>4. Permissions</h2>
   <p>The app requests only these Android permissions:</p>
   <ul>
-    <li><strong>Internet</strong> (<code>INTERNET</code>): to load ads and check the consent status with Google.</li>
+    <li><strong>Internet</strong> (<code>INTERNET</code>): to load ads, check the consent status with Google and send crash reports (section 5).</li>
     <li><strong>Network state</strong> (<code>ACCESS_NETWORK_STATE</code>): used by the ads SDK to check whether a connection is available before requesting ads.</li>
   </ul>
   <p>The app removes the <strong>Advertising ID</strong> permission (<code>com.google.android.gms.permission.AD_ID</code>) that the Google Mobile Ads SDK would otherwise add, so the advertising ID cannot be read. The app does not request access to your location (GPS), camera, microphone, contacts, photos, files or phone calls.</p>
   <h2>5. Analytics and crash reporting</h2>
-  <p>The app does not include any separate analytics or crash reporting service. Diagnostic data related to ads may be collected by the Google Mobile Ads SDK as described in section 2.</p>
+  <p>The app does not include any analytics service. Diagnostic data related to ads may be collected by the Google Mobile Ads SDK as described in section 2.</p>
+  <p>To find and fix bugs, One Line uses <strong>Firebase Crashlytics</strong>, a service provided by Google. If the game crashes or hits a serious error, it sends a crash report. A crash report contains only technical information:</p>
+  <ul>
+    <li>what went wrong in the game's code (the stack trace), the game version and basic game state, such as the level being played;</li>
+    <li>the device model, Android version and similar technical details (memory, screen orientation);</li>
+    <li>a random identifier created for crash reporting, used only to count how many devices are affected. It is not the advertising ID and is not linked to you.</li>
+  </ul>
+  <p>Crash reports never include your name, email, contacts, location, photos or anything you type, and nothing in them identifies a child. They are used only to fix problems, not for advertising, and are not sold or shared. Google processes them on our behalf and keeps them for 90 days, then deletes them. You can read more at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. To ask for crash data to be deleted sooner, email us at the address below.</p>
   <h2>6. Data sharing and selling</h2>
-  <p>We do not sell your personal information and we do not share any data with third parties ourselves. The only third party that receives data from the app is Google, through the AdMob and UMP SDKs, for the purposes described above.</p>
+  <p>We do not sell your personal information and we do not share any data with third parties ourselves. The only third party that receives data from the app is Google, through the AdMob and UMP SDKs and Firebase Crashlytics, for the purposes described above.</p>
   <h2>7. Data retention and deletion</h2>
   <ul>
     <li><strong>On-device data:</strong> You can delete all game progress and settings at any time by clearing the app's storage (<strong>Android Settings &gt; Apps &gt; One Line &gt; Storage &gt; Clear storage</strong>) or by uninstalling the app.</li>
@@ -88,10 +96,11 @@
     <li>The app does not collect the Android advertising ID, and no interest-based advertising or remarketing is used.</li>
     <li>No ad consent form is shown, because no personalised advertising or consent-based processing takes place.</li>
     <li>Rewarded videos are optional and clearly labelled; full-screen ads appear only at natural breaks between games.</li>
+    <li>Crash reports contain only technical information and nothing that identifies a child.</li>
   </ul>
-  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data processed by Google.</p>
+  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data or crash reports processed by Google.</p>
   <h2>9. Security</h2>
-  <p>Game data is kept in the app's private storage on your device, which other apps cannot access. Communication between the app and Google's ad services uses encrypted connections (HTTPS).</p>
+  <p>Game data is kept in the app's private storage on your device, which other apps cannot access. Communication between the app and Google's ad and crash-reporting services uses encrypted connections (HTTPS).</p>
   <h2>10. Changes to this policy</h2>
   <p>We may update this Privacy Policy from time to time, for example if the app's features change. The updated version will be posted at this address with a new "Last updated" date.</p>
   <h2>11. Contact</h2>

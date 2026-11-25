@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Privacy Policy for Sudoku</h1>
-  <p><strong>Last updated:</strong> October 31, 2026</p>
+  <p><strong>Last updated:</strong> November 25, 2026</p>
   <p>This Privacy Policy explains how the Android app <strong>Sudoku</strong> (package <code>com.hertz.sudok</code>, "the app"), published by Hertz Studio ("we", "us"), handles information. If you have questions, contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a>.</p>
   <h2>Summary</h2>
   <ul>
@@ -24,6 +24,7 @@
     <li>Sudoku is designed for players of all ages, including children under 13. We treat <strong>every</strong> player as a child.</li>
     <li>The app shows ads from <strong>Google AdMob</strong>. All ads are non-personalized and rated G (suitable for all ages). The app does not collect the advertising ID, and no interest-based or remarketing ads are shown.</li>
     <li>Because no personalized advertising takes place, the app does not show an ad consent form.</li>
+    <li>If the game crashes, it sends a short technical crash report (with no personal information) to <strong>Firebase Crashlytics</strong> so we can fix the problem.</li>
   </ul>
   <h2>1. Information stored on your device</h2>
   <p>The app saves the following on your device, using Android's local app storage:</p>
@@ -33,7 +34,7 @@
     <li>Hints and lives you own, and the date you last opened the daily reward chest</li>
     <li>Settings: sound effects and vibration on/off</li>
   </ul>
-  <p>This data never leaves your device through the app and is not sent to us. If you have Android backup turned on, Android may include this data in your device's backup to your Google account, or copy it to a new device during setup. That backup is handled by Google under your Google account settings, not by us. You can delete all of this data at any time by clearing the app's storage (Settings &gt; Apps &gt; Sudoku &gt; Storage &gt; Clear storage) or by uninstalling the app.</p>
+  <p>This data is not sent to us. The only exception is a crash report (section 3), which may include basic game state such as the level being played. If you have Android backup turned on, Android may include this data in your device's backup to your Google account, or copy it to a new device during setup. That backup is handled by Google under your Google account settings, not by us. You can delete all of this data at any time by clearing the app's storage (Settings &gt; Apps &gt; Sudoku &gt; Storage &gt; Clear storage) or by uninstalling the app.</p>
   <h2>2. Advertising (Google AdMob)</h2>
   <p>The app is free to play and is supported by ads provided by Google AdMob (Google Mobile Ads SDK). The app shows banner ads, occasional full-screen ads between games, and optional rewarded video ads that you can choose to watch for in-game rewards such as a hint, a life, a second chance or extra time.</p>
   <p>Google AdMob is certified for use in apps for children under Google Play's Families policy. Every ad request from the app is marked as <strong>child-directed</strong> (for COPPA) and <strong>under the age of consent</strong> (for the GDPR and UK GDPR), with a maximum ad content rating of <strong>G</strong>. This means, for every player:</p>
@@ -57,20 +58,28 @@
     <li>Google advertising technologies: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
   </ul>
   <p>The app does not use precise location, and it does not ask for the location, camera, microphone, contacts or storage permissions.</p>
-  <h2>3. Consent and your choices</h2>
+  <h2>3. Crash reports (Firebase Crashlytics)</h2>
+  <p>To find and fix bugs, Sudoku uses <strong>Firebase Crashlytics</strong>, a service provided by Google. If the game crashes or hits a serious error, it sends a crash report. A crash report contains only technical information:</p>
+  <ul>
+    <li>what went wrong in the game's code (the stack trace), the game version and basic game state, such as the level being played;</li>
+    <li>the device model, Android version and similar technical details (memory, screen orientation);</li>
+    <li>a random identifier created for crash reporting, used only to count how many devices are affected. It is not the advertising ID and is not linked to you.</li>
+  </ul>
+  <p>Crash reports never include your name, email, contacts, location, photos or anything you type, and nothing in them identifies a child. They are used only to fix problems, not for advertising, and are not sold or shared. Google processes them on our behalf and keeps them for 90 days, then deletes them. You can read more at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>. To ask for crash data to be deleted sooner, email us at the address below.</p>
+  <h2>4. Consent and your choices</h2>
   <ul>
     <li><strong>No consent form:</strong> the app uses Google's User Messaging Platform (UMP) only to tell Google that the user is under the age of consent. As a result, no consent form is shown and personalized ads are never requested, wherever you live.</li>
     <li><strong>Ad privacy choices:</strong> the <strong>Settings &gt; Ad privacy choices</strong> entry only appears if Google's consent tool reports that it is required, which is not expected for this setup.</li>
     <li><strong>Advertising ID:</strong> the app does not read your advertising ID, so resetting it in your device settings has no effect on this app.</li>
     <li>Rewarded video ads are always optional and clearly labelled.</li>
   </ul>
-  <h2>4. Internet and permissions</h2>
-  <p>The app uses the internet and network-state permissions only to load and show ads and to check the consent status with Google (no consent message is shown). It removes the advertising ID permission that the Google Mobile Ads SDK would otherwise add. The puzzles themselves are created on your device, so the game can be played without an internet connection.</p>
-  <h2>5. Data we collect</h2>
-  <p>We, the developer, do not collect, store, sell or receive any personal information from the app. We do not use our own analytics or crash-reporting services. Data collected by Google AdMob is handled by Google as described above.</p>
-  <h2>6. Data security</h2>
-  <p>Information collected by the Google Mobile Ads SDK is sent to Google using encrypted connections (HTTPS). Data stored on your device is protected by Android's app sandbox.</p>
-  <h2>7. Children</h2>
+  <h2>5. Internet and permissions</h2>
+  <p>The app uses the internet and network-state permissions to load and show ads, to check the consent status with Google (no consent message is shown) and to send crash reports (section 3). It removes the advertising ID permission that the Google Mobile Ads SDK would otherwise add. The puzzles themselves are created on your device, so the game can be played without an internet connection.</p>
+  <h2>6. Data we collect</h2>
+  <p>We, the developer, do not collect, store, sell or receive any personal information from the app. We do not use any analytics service. Crash reports are handled by Firebase Crashlytics, as described in section 3. Data collected by Google AdMob is handled by Google as described above.</p>
+  <h2>7. Data security</h2>
+  <p>Information collected by the Google Mobile Ads SDK, and crash reports sent to Firebase Crashlytics, are sent to Google using encrypted connections (HTTPS). Data stored on your device is protected by Android's app sandbox.</p>
+  <h2>8. Children</h2>
   <p>Sudoku is designed for players of all ages, including children under 13 (or the equivalent minimum age in your country). We follow Google Play's Families policy and treat every player as a child, whatever their age:</p>
   <ul>
     <li>We do not ask for or collect any personal information. There is no account, chat, user-generated content or in-app purchase.</li>
@@ -78,13 +87,14 @@
     <li>The app does not collect the Android advertising ID, and no interest-based advertising or remarketing is used.</li>
     <li>No ad consent form is shown, because no personalized advertising or consent-based processing takes place.</li>
     <li>Rewarded videos are optional and clearly labelled; full-screen ads appear only at natural breaks between games.</li>
+    <li>Crash reports contain only technical information and nothing that identifies a child.</li>
   </ul>
-  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data processed by Google.</p>
-  <h2>8. Your rights</h2>
+  <p><strong>Parents and guardians</strong> can contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a> with any question, or to ask us to delete data. We (the developer) hold no personal data about your child: game progress stays on the device and can be deleted by clearing the app's storage or uninstalling the app, and we will help you with any request about ad-related data or crash reports processed by Google.</p>
+  <h2>9. Your rights</h2>
   <p>Depending on where you live, you may have rights to access, correct or delete personal data, or to object to or restrict its use. Because we do not hold any of your data, you can exercise these rights over the data on your device by clearing the app's storage or uninstalling it, and over advertising data (processed by Google under child-directed treatment) by contacting Google or asking us for help. You may also contact us at <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a>.</p>
-  <h2>9. Changes to this policy</h2>
+  <h2>10. Changes to this policy</h2>
   <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with a new "Last updated" date.</p>
-  <h2>10. Contact</h2>
+  <h2>11. Contact</h2>
   <p>Hertz Studio Email: <a href="mailto:raheelmushtaq41@gmail.com">raheelmushtaq41@gmail.com</a></p>
 </body>
 </html>
